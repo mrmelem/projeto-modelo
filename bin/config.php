@@ -1,7 +1,7 @@
 <?php
 
 if (!isset($_ENV['prod'])) {
-    $_ENV['INCLUDE_PATH'] = '/projeto-modelo/';
+    $_ENV['INCLUDE_PATH'] = '/jessica-site/';
 }
 
 define("INCLUDE_PATH", $_ENV['INCLUDE_PATH']);
