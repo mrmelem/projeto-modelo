@@ -6,9 +6,6 @@ $render = new views\View;
 
 ?>
 
-
-
-
 <h1>Home</h1>
 
 <nav>
