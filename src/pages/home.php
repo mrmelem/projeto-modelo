@@ -9,18 +9,18 @@ $render = new views\View;
 <h1>Home</h1>
 
 <nav>
-    <p class="products">" Products | "<i class="fas fa-tshirt"></i></p>
-    <p class="checkout">" Carrinho | "<i class="fas fa-shopping-bag"></i></p>
+    <p class="products"> Products | <i class="fas fa-tshirt"></i></p>
+    <p class="checkout"> Carrinho | <i class="fas fa-shopping-bag"></i></p>
 </nav>
 
 
-<div class="icon_instagram">
+<div class="icon instagram">
     <a href="https://instagram.com/jessica_d.luxe?igshid=1dv04yfs6j0sa">
         <?php $render->svg("insta") ?>
     </a>
 </div>
 
-<div class="iconwpp">
+<div class="icon wpp">
     <a href="https://api.whatsapp.com/send?phone=+5591985686508">
         <?php $render->svg("wpp") ?>
     </a>
