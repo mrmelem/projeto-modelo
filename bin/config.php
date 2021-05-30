@@ -1,7 +1,10 @@
 <?php
 
+if (!isset($_ENV['prod'])) {
+    $_ENV['INCLUDE_PATH'] = '/projeto-modelo/';
+}
 
-
+define("INCLUDE_PATH", $_ENV['INCLUDE_PATH']);
 
 function Autoload($class)
 {
