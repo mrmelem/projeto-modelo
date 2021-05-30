@@ -5,8 +5,8 @@
 
 function Autoload($class)
 {
-    if (file_exists('./src/functions/' . $class . '.php')) {
-        include_once('./src/functions/' . $class . '.php');
+    if (file_exists('./src/' . $class . '.php')) {
+        include_once('./src/' . $class . '.php');
     } else {
         die($class);
     }

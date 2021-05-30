@@ -11,9 +11,9 @@ class View
     public function render($body, $header = null, $footer = null)
     {
         if ($header == null)
-            include('./src/components/SEO/' . self::DEFAULT_HEADER);
+            include('./src/components/seo/' . self::DEFAULT_HEADER);
         else
-            include('./src/components/SEO/' . $header);
+            include('./src/components/seo/' . $header);
 
         include('./src/pages/' . $body);
 
