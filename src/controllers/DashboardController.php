@@ -29,11 +29,8 @@ class DashboardController extends Controller
 		$page = 'dashboard/products/';
 		if ($url == 'add') {
 			if (isset($_POST['acao'])) {
-				//$this->model->setProduct($_POST);
-				//header('Location:' . INCLUDE_PATH . 'products');
-				echo "<pre>";
-				print_r($_POST);
-				echo "</pre>";
+				$this->model->setProduct($_POST);
+				header('Location:' . INCLUDE_PATH . 'products');
 			} else {
 				$this->view->render($page . 'new.php');
 			}
@@ -53,4 +50,6 @@ class DashboardController extends Controller
 		session_destroy();
 		header('location:' . INCLUDE_PATH);
 	}
+
+
 }

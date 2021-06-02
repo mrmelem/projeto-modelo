@@ -28,6 +28,10 @@ class LoginController extends Controller
                 $this->view->erro('Campos vazios não são permitidos');
             }
         }
-        $this->view->render('login.php');
+
+        if (@$_SESSION['user_access'])
+            header('location:' . INCLUDE_PATH . 'dashboard');
+        else
+            $this->view->render('login.php');
     }
 }

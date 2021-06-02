@@ -2,8 +2,6 @@
 
 namespace views;
 
-use MySql;
-
 class View
 {
 
@@ -41,5 +39,12 @@ class View
     {
         $content = file_get_contents('./assets/svgs/' . $svg . '.svg');
         echo $content;
+    }
+
+    static function getProducts()
+    {
+        $sql = \MySql::conectar()->prepare('SELECT * FROM `tb_products`');
+        $sql->execute();
+        return $sql->fetchAll();
     }
 }

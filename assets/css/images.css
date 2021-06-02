@@ -1,4 +1,21 @@
 .product-svg-aside {
-  width: 2rem;
+  width: 1.5rem;
+}
+
+.svg-network {
+  width: 60px;
+}
+
+.icon {
+  position: fixed;
+  right: 20px;
+}
+
+.wpp {
+  bottom: 20px;
+}
+
+.instagram {
+  bottom: 120px;
 }
 /*# sourceMappingURL=images.css.map */
